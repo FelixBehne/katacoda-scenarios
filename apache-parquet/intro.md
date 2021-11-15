@@ -3,3 +3,6 @@ Apache Parquet is an open-source, general-purpose, columnar file format, thats a
 Parquet is build based on the record shredding and assembly algorithm as described by Google engineers in their paper [Dremel: Interactive Analysis of Web-Scale Datasets](https://research.google/pubs/pub36632/). This algorithm allows for a translation of objects into a columnar format and is, according to the official [documentation](https://parquet.apache.org/documentation/latest/), superior to simply flattening the objects.
 
 This Katacoda is build for absolute beginners and intended to teach the basic interaction with parquet utilizing the python library [fastparquet](https://github.com/dask/fastparquet).
+
+
+

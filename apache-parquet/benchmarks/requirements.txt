@@ -1,0 +1,3 @@
+fastavro
+pytest
+pytest-benchmark
