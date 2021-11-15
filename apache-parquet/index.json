@@ -24,14 +24,14 @@
     ],
     "intro": {
       "text": "intro.md",
-      "code": "env-init.sh"
+      "courseData": "env-init.sh"
     },
     "finish": {
       "text": "finish.md"
     }
   },
   "environment": {
-    "uilayout": "terminal"
+    "uilayout": "vscode-terminal-split"
   },
   "backend": {
     "imageid": "python:3.8"
