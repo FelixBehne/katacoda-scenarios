@@ -3,12 +3,11 @@ This is accompanied by the demand for efficient storage and processing solutions
 
 One of the most widely used platforms for this purpose is Apache Hadoop [(Mavridis and Karatza, 2017)][2]. Hadoop is a set of software utilities that facilitates distributed storage and data processing based on the MapReduce processing model [(Fundation, n.d.)][3]. 
 
+Data can be stored in a variety of data formats, all of which have different advantages. One of the most famous formats is Apache Parquet. 
+
 |Apache Hadoop|Apache Parquet|
 |:-:|:-:|
-|![Apache Hadoop](https://upload.wikimedia.org/wikipedia/commons/3/38/Hadoop_logo_new.svg)|![Apache Parquet](https://upload.wikimedia.org/wikipedia/commons/4/47/Apache_Parquet_logo.svg)|
-
-
-Data can be stored in a variety of data formats, all of which have different advantages. One of the most famous formats is Apache Parquet. 
+|<img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Hadoop_logo_new.svg" alt="Apache Hadoop Logo" width="800"/>| <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Apache_Parquet_logo.svg" alt="Apache Parquet Logo" width="800"/>|
 
 Apache Parquet is an open-source, general-purpose, columnar file format, that's available to any project in the Hadoop ecosystem. It was initially released in July 2013 as a joint effort by Twitter and Cloudera. The official announcement can be found [here][4].
 
