@@ -2,5 +2,14 @@
   "python.linting.mypyEnabled": false,
   "python.linting.pylintEnabled": true,
   "python.linting.enabled": true,
-  "cSpell.words": ["fastavro", "stringio"]
+  "cSpell.words": ["fastavro", "stringio"],
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/.mypy_cache": true
+  }
 }
