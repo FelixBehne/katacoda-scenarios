@@ -4,7 +4,7 @@ Now after you've downloaded the Parquet Python interface, let's use it. To do th
 
 `wget -i urls.txt`{{execute}}
 
-The data you've downloaded is still zipped. To use it it must first be unzipped and merged into one file containing all the data.
+In order to read the data into a pandas dataframe we first must unzip the data. Moreover, its advantageous if we also merge all the data into one csv to reduce the number of I/O operations in the further steps. 
 
 ```
 unzip "*.zip" -d ./data
@@ -16,7 +16,7 @@ rm 20*.csv && cd ..
 python rocket.py
 ```{{execute}}
 
-Start now an interactive Python session and load the data into a pandas dataframe.
+Wait now until the rocket 🚀 took of and proceed with starting an interactive Python session to load the data into memory.
 ``` 
 clear
 ipython 
