@@ -10,12 +10,14 @@ The data you've downloaded is still zipped. To use it it must first be unzipped 
 unzip "*.zip" -d ./data
 rm -rf *.zip
 cd ./data
-sed -i '' 1d *.csv
+sed -i 1d *.csv
 cat *csv > combined.csv
+rm 20*.csv
 ```{{execute}}
 
 Start now an interactive Python session and load the data into a pandas dataframe.
 ``` 
+clear
 ipython 
 import pandas as pd
 from fastparquet import ParquetFile, write
