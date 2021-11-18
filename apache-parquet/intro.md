@@ -7,12 +7,12 @@ Within the hadoop ecosystem data can be stored in a variety of formats, all of w
 
 Apache Parquet is an open-source, general-purpose, columnar file format. It was initially released in July 2013 as a joint effort by Twitter and Cloudera. The official announcement can be found [here][4].
 
-<p float="left" style="text-align: center; font-size: 6.8px; line-height:30px">
+<p float="left" style="text-align:center;font-size:9px;line-height:30px;padding-right:3%">
   <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Hadoop_logo_new.svg" width=49% />
   <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Apache_Parquet_logo.svg" width=49%/> 
   Sources: https://upload.wikimedia.org/wikipedia/commons/3/38/Hadoop_logo_new.svg, https://upload.wikimedia.org/wikipedia/commons/4/47/Apache_Parquet_logo.svg
 </p>
-
+<br>
 Due to it's columnar-oriented design, it comes with many performance advantages over row-oriented file formats. <br>
 
 In this scenario you will learn how to work with parquet in python, how parquet performs when dealing with millions of rows and how it compares to row-oriented file formats like Avro.<br>
