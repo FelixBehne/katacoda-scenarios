@@ -14,12 +14,16 @@
         "text": "step2.md"
       },
       {
-        "title": "Prepare the environment",
+        "title": "Writing data",
         "text": "step3.md"
       },
       {
-        "title": "Step 4",
+        "title": "Reading data",
         "text": "step4.md"
+      }
+      {
+        "title": "Partioning data",
+        "text": "step5.md"
       }
     ],
     "intro": {
