@@ -2,3 +2,4 @@
 .vscode
 tmp
 *.parq
+tmp.py

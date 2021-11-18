@@ -15,4 +15,9 @@ computations
 Column-oriented file formats (e.g. Parquet, OCR) store data column by column.
 They are best suited for OLAP applications due to the following advantages:
 * Data can be retrieved with far fewer read operations than for row-oriented storage
+* Computations involving partial table scans are much faster (e.g. aggregation)
+* Efficient compression, because identical data types are stored in the same blocks
 
+In order to use it in Python we first must download an according Python interface. Execute the following command by clicking on it.<br>
+
+`pip install fastparquet`{{execute}}

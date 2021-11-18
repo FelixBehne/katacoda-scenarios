@@ -15,7 +15,7 @@ Apache Parquet is an open-source, general-purpose, columnar file format. It was 
 <br>
 Due to it's columnar-oriented design, it comes with many performance advantages over row-oriented file formats. <br>
 
-In this scenario you will learn how to work with parquet in Python, how parquet performs when dealing with millions of rows and how it compares to row-oriented file formats like Avro.<br>
+In this scenario you will learn how to work with Parquet in Python, how it performs when dealing with millions of rows and how it compares to row-oriented file formats like Avro.<br>
 
 **Let's get started 🚀**
 
