@@ -27,7 +27,7 @@ def print_rocket():
 
 print_rocket()
 
-delay = 300
+delay = 500
 for i in range(60):
     print()
     sleep(delay / 1000)
