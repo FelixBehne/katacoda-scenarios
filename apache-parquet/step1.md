@@ -1,4 +1,4 @@
-# Row oriented vs. columnar oriented file system 
+
 
 > <span style="font-size:10px">**Disclaimer:** The contents of this step are based on the contents of the lecture notes from the lecture: *Data Management Fundamentals*, lectured by Andreas Buckenhofer.</span>
 
