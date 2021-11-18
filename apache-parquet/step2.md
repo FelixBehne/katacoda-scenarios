@@ -21,9 +21,9 @@ Wait now until the rocket 🚀 took of and proceed with starting an interactive 
 clear
 ipython 
 import pandas as pd
-from fastparquet import ParquetFile, write
 
-df = df = pd.read_csv("./data/combined.csv", names=["Duration", "Start Date", "End Date", "Start station number", "Start station" "End station number", "End station", "Bike number", "Member Type",], parse_dates=["Start Date", "End Date"],)
+names = ["Duration", "Start Date", "End Date", "Start station number", "Start station" "End station number", "End station", "Bike number", "Member Type",]
+df = pd.read_csv("./data/combined.csv", names=names, parse_dates=["Start Date", "End Date"],)
 ```{{execute}}
 
 [1]: https://www.capitalbikeshare.com/system-data
