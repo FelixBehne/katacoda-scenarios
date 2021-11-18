@@ -10,6 +10,9 @@
     "**/CVS": true,
     "**/.DS_Store": true,
     "**/Thumbs.db": true,
-    "**/.mypy_cache": true
+    "**/.mypy_cache": true,
+    "**/.benchmarks": true,
+    "**/.pytest_cache": true,
+    "**/__pycache__": true
   }
 }

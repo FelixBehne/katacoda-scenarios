@@ -5,7 +5,7 @@ We therefore use trip history data provided by [Capital Bikeshare (n.d.)][1], un
 
 Execute the following commands to download and extract the data.<br>
 
-`wget -i urls.txt && unzip "*.zip" -d ./data  && rm -rf *.zip`{{execute}}
+`wget -i urls.txt && unzip "*.zip" -d ./data  && rm -rf *.zip && cat *csv > combined.csv`{{execute}}
 
 In this scenario we're going to explore Parquet and its performance benefits in comparison to Avro, as row-oriented file format, through python. We therefore need to install their according python implementations.<br>
 
