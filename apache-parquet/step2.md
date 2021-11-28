@@ -29,8 +29,9 @@ import pandas as pd, pyarrow.parquet as pq
 from pyarrow import csv
 
 
-names = ["Duration", "Start Date", "End Date", "Start station number", "Start station" "End station number", "End station", "Bike number", "Member Type",]
-df = csv.read_csv("./combined.csv", csv.ReadOptions(column_names=names)).to_pandas()
+names = ["Duration", "Start Date", "End Date", "Start station number", "Start station", "End station number", "End station", "Bike number", "Member Type"]
+
+df = csv.read_csv("./data/combined.csv", csv.ReadOptions(column_names=names)).to_pandas()
 ```{{execute}}
 
 [1]: https://www.capitalbikeshare.com/system-data
