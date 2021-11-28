@@ -1,10 +1,23 @@
-After you've learned how to write a dataframe to disk in Parquet with different compression algorithms, in this step you will learn how to read a Parquet file.
+# Partitioning
 
-Here, too, pandas comes to our rescue and abstracts from the library's own syntax. Let's start with the snappy compressed file.<br>
+In the previous step you've learned how to map data from an in-memory representation into one file. However, this approach lead to performance penalties, in cases where data get's added incrementally or read operations depend on one or multiple variables. To overcome this penalties, Parquet offers a way of partitioning data into multiple small pieces.
 
-`%time pd.read_parquet("historical-trips.parquet", engine="fastparquet")`{{execute}}
+Parquet creates a folder for each key and treats the resulting file system as one coherent file. This in combination with columnar storage and columnar compression can significantly improve I/O performance.
 
-Now let's read the gzip file.
-`%time pd.read_parquet("historical-trips.parquet.gzip", engine="fastparquet")`{{execute}}
+On the basis of which column the data should best be partitioned, depends considerably on the use case. However, care should be taken that the cardinality of the column on the basis of which partitioning is to be carried out is not too high in order to counteract the creation of a very large number of small files.
 
-So there is no huge performance difference in both compression algorithms. Hence, these should be selected according to the requirements in terms of write speed versus compression.
+In our case, let's partition our data on the start and end date. One can easily imagine many queries that depend on this information.
+However, we first need to reduce their resolution to the date only to avoid the creation of two many small files.<br>
+
+```python
+df["Start Day"] = df["Start Date].dt.date
+df["End Day"] = df["End Date].dt.date
+```
+Now we can use the newly created columns as basis for the partitioning.<br>
+
+`pq.write_to_dataset(df_table, 'historical_trips_partitioned', partition_cols=["Start Date", "End Date"], use_legacy_dataset=False)`{{execute}}
+
+Let's see what happened.<br>
+`!tree`{{execute}}
+
+As expected, a folder has been created, containing the data partitioned by the columns given.

@@ -4,3 +4,4 @@ tmp
 *.parq
 tmp.py
 *.zip
+*.csv
