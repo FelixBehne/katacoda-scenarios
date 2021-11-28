@@ -12,7 +12,7 @@ However, we first need to reduce their resolution to the date only to avoid the 
 ```
 df["Start Day"] = df["Start Date].dt.date
 df["End Day"] = df["End Date].dt.date
-```
+```{{execute}}
 Now we can use the newly created columns as basis for the partitioning.<br>
 
 `pq.write_to_dataset(df_table, 'historical_trips_partitioned', partition_cols=["Start Date", "End Date"], use_legacy_dataset=False)`{{execute}}

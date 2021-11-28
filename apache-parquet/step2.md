@@ -24,16 +24,13 @@ Now lets start an interactive python session.
 In order to interact with the data in the following steps lets load it into a pandas dataframe.<br>
 
 ```python
-import os 
-import sys
-import pyarrow
-import datetime
-import pandas as pd
+import os, sys, pyarrow, datetime
+import pandas as pd, pyarrow.parquet as pq
 from pyarrow import csv
-import pyarrow.parquet as pq
+
 
 names = ["Duration", "Start Date", "End Date", "Start station number", "Start station" "End station number", "End station", "Bike number", "Member Type",]
-df = csv.read_csv("./data/combined.csv", csv.ReadOptions(column_names=names)).to_pandas()
+df = csv.read_csv("./combined.csv", csv.ReadOptions(column_names=names)).to_pandas()
 ```{{execute}}
 
 [1]: https://www.capitalbikeshare.com/system-data
