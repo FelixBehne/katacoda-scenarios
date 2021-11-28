@@ -13,7 +13,7 @@ sed -i '' -e 1d *.csv
 cat *csv > combined.csv
 rm 20*.csv && cd ..
 python rocket.py
-```
+```{{execute}}
 
 Unzipping and merging can take a few seconds. You know it's done when you see a rocket 🚀 take off. 
 
@@ -34,7 +34,7 @@ import pyarrow.parquet as pq
 
 names = ["Duration", "Start Date", "End Date", "Start station number", "Start station" "End station number", "End station", "Bike number", "Member Type",]
 df = csv.read_csv("./data/combined.csv", csv.ReadOptions(column_names=names)).to_pandas()
-```
+```{{execute}}
 
 [1]: https://www.capitalbikeshare.com/system-data
 [2]: https://www.capitalbikeshare.com/data-license-agreement

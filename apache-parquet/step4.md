@@ -9,7 +9,7 @@ On the basis of which column the data should best be partitioned, depends consid
 In our case, let's partition our data on the start and end date. One can easily imagine many queries that depend on this information.
 However, we first need to reduce their resolution to the date only to avoid the creation of two many small files.<br>
 
-```python
+```
 df["Start Day"] = df["Start Date].dt.date
 df["End Day"] = df["End Date].dt.date
 ```
