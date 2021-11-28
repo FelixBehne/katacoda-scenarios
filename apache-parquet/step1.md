@@ -20,4 +20,4 @@ They are best suited for OLAP applications due to the following advantages:
 
 In order to use it in Python we first must download an according Python interface. Execute the following command by clicking on it.<br>
 
-`pip install fastparquet`{{execute}}
+`pip install pyarrow`{{execute}}
