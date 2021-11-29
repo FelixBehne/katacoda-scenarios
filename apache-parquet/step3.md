@@ -10,7 +10,7 @@ To be able to map the data currently stored in-memory to disk, we must first con
 Parquet allows for multiple compression algorithms to be applied, all coming with their own advantages and disadvantages. In the following we will explore the two most popular algorithms already implemented in pyarrow. 
 
 ## Snappy compression 
-Snappy is a compression/decompression algorithm build by Google. Its aim is to be very fast at a reasonable compression. This comes at the cost of compression ratio [(Avram, 2011)][1]. Let's see how it performs on a dataframe of the size of 4.3GB in memory. We can time the execution time with the magical function %time. <br>
+Snappy is a compression/decompression algorithm build by Google. Its aim is to be very fast at a reasonable compression. This comes at the cost of compression ratio [(Avram, 2011)][1]. Let's see how it performs on a dataframe of the size of 3.1GB in memory. We can time the execution time with the magical function %time. <br>
 
 `%time pq.write_table(df_table, "historical_trips.parquet", compression="snappy")`{{execute}}
 
