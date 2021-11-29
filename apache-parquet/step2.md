@@ -9,7 +9,7 @@ In order to read the data into a pandas dataframe we first must unzip the data. 
 unzip "*.zip" -d ./data
 rm -rf *.zip
 cd ./data
-sed -i '' -e 1d *.csv
+sed -i '' -e '1d' *.csv
 cat *csv > combined.csv
 rm 20*.csv && cd ..
 python rocket.py
