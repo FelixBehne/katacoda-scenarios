@@ -14,11 +14,11 @@ df["Start Day"] = df["Start Date"].dt.date
 ```{{execute}}
 Now we can use the newly created columns as basis for the partitioning.<br>
 
-`pq.write_to_dataset(df_table, 'historical_trips_partitioned', partition_cols=["Start Date"], use_legacy_dataset=False)`{{execute}}
+`pq.write_to_dataset(pyarrow.Table.from_pandas(df), 'historical_trips_partitioned', partition_cols=["Start Day"], use_legacy_dataset=False)`{{execute}}
 
 Let's see what happened.<br>
 ```
-!cd .. && ls | head -4
+os.system("cd historical_trips_partitioned  && ls | head -4")
 ```{{execute}}
 
 As expected, a folder has been created, containing the data partitioned by the columns given.

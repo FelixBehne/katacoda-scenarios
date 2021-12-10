@@ -25,12 +25,12 @@ After benchmarking the snappy compression, let's now see how the gzip compressio
 
 `%time pq.write_table(df_table, "historical_trips.parquet.gzip", compression="gzip")`{{execute}}
 
-It is noticeable that gzip takes significantly longer, almost 25 times. 
+It is noticeable that gzip takes significantly longer.
 Let's see how this has affected the compression rate.<br>
 
 `sys.getsizeof(df)/os.path.getsize("historical_trips.parquet.gzip")`{{execute}}
 
-We can see a huge difference in the compression ratio. It seems like gzip is able to compress the data almost twice as much compared to snappy. 
+We can see a huge difference in the compression ratio. It looks like, that gzip is able to compress files way more efficient. On the other hand, however, it takes way more time to compress a given file.
 
 
 
