@@ -1,3 +1,0 @@
-https://s3.amazonaws.com/capitalbikeshare-data/2015-capitalbikeshare-tripdata.zip
-https://s3.amazonaws.com/capitalbikeshare-data/2016-capitalbikeshare-tripdata.zip
-https://s3.amazonaws.com/capitalbikeshare-data/2017-capitalbikeshare-tripdata.zip

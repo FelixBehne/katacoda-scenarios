@@ -1,7 +1,7 @@
-According to a study conducted by [Frost & Sullivan (2020)][1], Big Data analytics market revenue is forecasted to grow with a compound annual growth rate of almost 30%. 
-This is accompanied by the demand for efficient storage and processing solutions that can meet the requirements of analytical processing applications (OLAP). 
+According to a study conducted by [Frost & Sullivan (2020)][1], Big Data analytics market revenue is forecasted to grow with a compound annual growth rate of almost 30%.
+This is accompanied by the demand for efficient storage and processing solutions that can meet the requirements of analytical processing applications (OLAP).
 
-One of the most widely used platforms for this purpose is Apache Hadoop [(Mavridis and Karatza, 2017)][2]. Hadoop is a set of software utilities that facilitates distributed storage and data processing based on the MapReduce processing model [(Fundation, n.d.)][3]. 
+One of the most widely used platforms for this purpose is Apache Hadoop [(Mavridis and Karatza, 2017)][2]. Hadoop is a set of software utilities that facilitates distributed storage and data processing based on the MapReduce processing model [(Fundation, n.d.)][3].
 
 Within the hadoop ecosystem data can be stored in a variety of formats, all of which have different advantages. One of the most famous formats is Apache Parquet.
 
@@ -9,7 +9,7 @@ Apache Parquet is an open-source, general-purpose, columnar file format. It was 
 
 <p float="left" style="text-align:center;font-size:9px;line-height:30px;padding-right:3%">
   <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Hadoop_logo_new.svg" width=49% />
-  <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Apache_Parquet_logo.svg" width=49%/> 
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Apache_Parquet_logo.svg" width=49%/>
   Sources: https://upload.wikimedia.org/wikipedia/commons/3/38/Hadoop_logo_new.svg, https://upload.wikimedia.org/wikipedia/commons/4/47/Apache_Parquet_logo.svg
 </p>
 <br>
