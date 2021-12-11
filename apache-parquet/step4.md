@@ -18,7 +18,7 @@ Now we can use the newly created columns as the basis for the partitioning.<br>
 
 Let's see what happened. The following command prints the first four entries of the newly-created directory. You can ignore the broken pipe error. It's out of the scope four this scenario.<br>
 ```
-os.system("cd historical_trips_partitioned  && ls | head -4")
+!cd historical_trips_partitioned  && ls | head -4"
 ```{{execute}}
 
 A new directory was created, containing all data partitioned by the Start Day.

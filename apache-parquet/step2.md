@@ -18,7 +18,7 @@ Unzipping and merging might take a minute, so lean back a few seconds. You know 
 
 Now lets start an interactive python session.
 
-`clear && python`{{execute}}
+`clear && ipython`{{execute}}
 
 In order to interact with the data in the following steps lets load it into a pandas dataframe.<br>
 

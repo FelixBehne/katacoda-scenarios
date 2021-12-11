@@ -21,7 +21,7 @@ Now let's calculate the compression ratio.<br>
 The compression rate is a measurement to measure the relative reduction in size that a compression algorithm can produce. In this case, Parquet can compress the data in a ratio of approximately seventeen to one.
 
 ## Gzip compression
-After benchmarking the snappy compression, let's now see how the gzip compression compares to that. Gzip was created by Jean-loup Gailly and Mark Adler and was firstly released on 31 October 1992 [(GNU, 2021)][2]. Is's specification can be found [here][3].
+After benchmarking the snappy compression, let's now see how the gzip compression compares to that. Gzip was created by Jean-loup Gailly and Mark Adler and was firstly released on 31 October 1992 [(GNU, 2021)][2]. Its specification can be found [here][3].
 
 `%time pq.write_table(df_table, "historical_trips.parquet.gzip", compression="gzip")`{{execute}}
 
@@ -30,8 +30,9 @@ Let's see how this has affected the compression rate.<br>
 
 `sys.getsizeof(df)/os.path.getsize("historical_trips.parquet.gzip")`{{execute}}
 
-We can see a huge difference in the compression ratio. It looks like, that gzip can compress files way more efficiently. On the other hand, however, it takes way more time to compress a given file.
+We can see a huge difference in the compression ratio.s
 
+Generally speaking, snappy is more suitable for cases where I/O performance is important and gzip for cases where very efficient compression is required.
 
 
 
