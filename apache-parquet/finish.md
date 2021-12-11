@@ -1,6 +1,6 @@
-This scenario introduced the columnar file format Parquet and how to use its python implementation. Parquet allows for efficient data storage and retrieval and is ideally suited for Big Data applications utilizing the hadoop ecosystem.
+This scenario introduced the columnar file format Parquet and how to use its python implementation. Parquet allows for efficient data storage and retrieval and is ideally suited for Big Data applications utilizing the Hadoop ecosystem.
 
-Continue learning about Parquet and its application in the hadoop ecosystem in other scenarios.
+Continue learning about Parquet and its application in the Hadoop ecosystem in other scenarios.
 
 Resources:<br/>
 [Avram 2011]: [Avram, Abel: Google Snappy–A Fast Compressing Library. April 2011. – Access date: 2021-11-18](https://www.infoq.com/news/2011/04/Snappy/)<br/>

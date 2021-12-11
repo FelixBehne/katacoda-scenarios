@@ -1,4 +1,4 @@
-In the last steps you learned how to write data from the in-memory representation two disk. In this step you will learn how to read that data back into a dataframe and how the performance of multiple compression algorithms and partitioned and not partitioned data compares.
+In the last steps, you learned how to write data from the in-memory representation two disk. In this step, you will learn how to read that data back into a dataframe and how the performance of multiple compression algorithms and partitioned and not partitioned data compares.
 
 ## Read operations for Snappy vs. Gzip compression
 Let's start with the comparison of gzip vs. snappy compression. We again use the magical %time function to measure how long the execution takes.

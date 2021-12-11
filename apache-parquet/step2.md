@@ -14,7 +14,7 @@ rm 20*.csv && cd ..
 python rocket.py
 ```{{execute}}
 
-Unzipping and merging can take a few seconds. You know it's done when you see a rocket 🚀 take off.
+Unzipping and merging might take a minute, so lean back a few seconds. You know that you can proceed when you see a rocket take off 🚀.
 
 Now lets start an interactive python session.
 
